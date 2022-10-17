@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  redis:
+    image: "redis:latest"
+    ports:
+      - "6379:6379"
+  rabbitmq:
+    image: "rabbitmq:latest"
+    ports:
+      - "5672:5672"
+    environment:
+      - RABBITMQ_DEFAULT_USER=rabbitmq
+      - RABBITMQ_DEFAULT_PASS=rabbitmq

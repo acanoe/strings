@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "salad"
+version = "0.1.0"
+description = ""
+authors = ["Hendika N. <hendika.nugroho@loratechai.com>"]
+readme = "README.md"
+packages = [{ include = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+celery = { extras = ["rabbitmq"], version = "^5.2.7" }
+redis = "^4.3.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
